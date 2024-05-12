@@ -1,0 +1,99 @@
+/* Created by Mark Joshua */
+
+
+
+body {
+    background-color:rgb(105,206,190);
+    
+    margin:0px;
+ box-size:100px;
+    
+}
+ #wrapper
+{
+    height:320px;
+    width:320px;
+    background-color:rgba(90,260,190,10);
+    text-align:center ;
+    font-family:monospace;
+    font-weight:bold;
+    font-size:20px;
+    animation: blink 5s ease-out 5s infinite ;
+}
+.container1
+{
+    height:50px;
+    width:50px;
+    background-color:white;
+    position:relative ;
+    left:140px;
+    top:140px;
+    animation: edge 2s ease-in 0s infinite ;
+}
+.container2
+{
+    
+    height:50px;
+    width:50px;
+    background-color:white;
+    position:relative ;
+    left:140px;
+    top:90px;
+    animation:edge 2s ease-in .5s infinite ;
+    color:red;
+}
+.container3
+{
+    
+    height:50px;
+    width:50px;
+    background-color:white;
+    position:relative ;
+    left:140px;
+    top:40px;
+    animation:edge 5s ease-in 1s infinite ;
+   } 
+.container4
+{
+    
+    height:50px;
+    width:50px;
+    background-color:white;
+    position:relative ;
+    left:140px;
+    top:10px;
+    animation:edge 5s ease-in 1.5s infinite ;
+   }
+@-webkit-keyframes edge
+{
+    0%{transform-origin:-50px -50px;transform:rotate(360deg);
+    background-color:white; transform:scale(0);border-radius:25px;color:white;}
+    50%{border-radius:0px; left:50px; right:50px; bottom:50px;}
+100%{transform:scale(1);color:green;}
+}
+
+
+
+@-webkit-keyframes blink
+ { 0%{background-color:rgb(105, 206, 190); transform:scale(.7);border-radius:20px;}
+   50%{background-color:white;
+   transform:scale(1);border-radius:10;}
+   100%{background-color:rgb(105,206,190); transform:scale(1);}
+     
+ }
+.heart
+{
+    height:100px;
+    width:100px;
+    position:relative ;
+    bottom :300px;
+    left:130px;
+    font-size:50px;
+    z-index:0;
+    animation: heart 3s ease-out 0s infinite ;
+}
+@-webkit-keyframes heart
+ { 0%{opacity:0; transform:scale(.5);border-radius:20px; transform-origin:0 -50px;}
+   50%{opacity:1;
+   transform:scale(2);border-radius:10;}
+   100%{opacity:0; transform:scale(1);}
